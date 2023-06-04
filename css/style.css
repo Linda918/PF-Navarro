@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* Archivo scss*/
+body {
+  font-family: "Exo", sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo para el header */
+/* Barra de navegación*/
+.navbar {
+  padding: 2 rem;
+  background-color: #000000;
+}
+.navbar a {
+  color: #ffffff;
+}
+.navbar a.nav-link.active {
+  color: #ffffff;
+}
+.navbar a.nav-link.active:active {
+  color: #ff0000;
+}
+.navbar a.nav-link:active {
+  color: #1100ff;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a.navbar-brand:active {
+  color: #1100ff;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+.informacion {
+  margin: 0;
+  padding: 50px;
+  background-image: url("../img/espacio.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  overflow: visible;
+}
+.informacion h2 {
+  margin-bottom: 10px;
+}
+.informacion p {
+  font-size: 18px;
+  max-width: 500px;
+  margin-right: auto;
+  text-align: justify;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 480px) {
+  .informacion {
+    overflow: hidden;
+  }
+  .informacion p {
+    font-size: 16px;
+  }
+}
+.blog1 {
+  margin: 30px;
+  padding: 0;
+  text-align: justify;
+  margin-bottom: 200px;
+}
+.blog1 .izq {
+  float: left;
+  margin: 25px;
+}
+.blog1 a.boton {
+  float: right;
+}
+
+.boton {
+  background-color: #1100ff;
+  color: #ffffff;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 15px;
+  text-align: center;
+  border: none;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .content .intro {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  max-width: 100%;
+  position: relative;
+}
+.main .content .intro .texto-interior {
+  font-size: 30px;
+  font-weight: bold;
+  left: 10%;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 80%;
+}
+.main .content .img-cero {
+  background-image: url("../img/planeta0.jpg");
+}
+.main .content .img-uno {
+  background-image: url("../img/mercurio.jpg");
+}
+.main .content .img-dos {
+  background-image: url("../img/venus.jpg");
+}
+.main .content .img-tres {
+  background-image: url("../img/tierra.jpg");
+}
+.main .content .img-cuatro {
+  background-image: url("../img/marte.jpg");
+}
+.main .content .img-cinco {
+  background-image: url("../img/jupiter.jpg");
+}
+.main .content .img-seis {
+  background-image: url("../img/saturno.jpg");
+}
+.main .content .img-siete {
+  background-image: url("../img/urano.jpg");
+}
+.main .content .img-ocho {
+  background-image: url("../img/neptuno.jpg");
+}
+.main .content .img-nueve {
+  background-image: url("../img/bandera.jpg");
+}
+.main .content .img-diez {
+  background-image: url("../img/astronauta.jpg");
+}
+.main .content .img-once {
+  background-image: url("../img/katya.jpg");
+}
+.main .content .texto {
+  padding: 5%;
+  width: 90%;
+}
+.main .content .texto p {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.astronauta {
+  margin: 30px;
+  padding: 0;
+  margin-bottom: 100px;
+}
+.astronauta h2 {
+  color: #8112ad;
+  text-align: center;
+}
+.astronauta .info {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 30px;
+}
+.astronauta .izq {
+  float: left;
+  margin: 20px;
+}
+
+@media (max-width: 480px) {
+  .main .content .intro {
+    background-size: contain;
+  }
+  .main .content .intro .texto-interior {
+    font-size: 28px;
+  }
+  .main .content .texto p {
+    font-size: 16px;
+  }
+}
+.contenedor {
+  margin: 10px;
+  padding: 0;
+  margin-bottom: 80px;
+  background-image: url("../img/contactobien.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+.contenedor h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contenedor .cuadrado {
+  margin: 0;
+  padding: 0;
+  border: solid white;
+}
+.contenedor .datos {
+  margin: 20px;
+  padding: 0;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .contenedor {
+    overflow: hidden;
+  }
+  .contenedor .cuadrado {
+    border: dashed white;
+  }
+  .contenedor .datos {
+    font-size: 16px;
+  }
+}
+.footer {
+  background-color: #333333;
+  padding: 10px;
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.footer .redes {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.footer .final {
+  font-size: 14px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

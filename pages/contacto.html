@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <!-- Meta -->
+    <meta name="description" content="Futuro Aeroespacial">
+    <meta name="keywords" content="Futuro, aeroespacial, México" />
+    <meta name="author" content="Linda Navarro Figueroa"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Lo relacionamos con el archivo css -->
+    <link rel="stylesheet" href="../css/style.css" >
+    <!-- Titulo de la página -->
+    <title>Contacto</title> 
+</head>
+<!-- Cuerpo de nuestra web -->
+<body>
+    <!-- Encabezado de la pagina -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="../index.html">Futuro Aeroespacial</a>
+                <ul class="navbar-nav d-flex justify-content-center align.items-center">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="educacion.html">Educación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="astronautas.html">Astronautas Mexicanos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+    </header>
+    
+    <section class="contenedor"> <!-- seccion de contacto -->
+        <h2>Contactanos</h2>
+        <div class="cuadrado">
+            <div class="datos">
+                <form action="#">
+                <div>
+                    <!-- Etiqueta <label> define formalmente a cada elemento de un formulario -->
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Tu nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="correo">Correo</label>
+                    <input type="email" placeholder="Correo electrónico" id="correo">
+                </div>
+                <div>
+                    <label for="corre">Número</label>
+                    <input type="numbers" placeholder="Número de teléfono" id="numero"><br/><br/>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje<br>
+                        <textarea placeholder="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+
+                 <input class="boton" type="submit" value="Enviar"></br></br>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Define el pie de una página -->
+    <footer class="footer">
+        <!-- Es un divisor (de ahí su nombre) y se comporta como elemento de bloque -->
+        <div class="redes">
+            <a href="https://es-la.facebook.com/" target="_blank">
+                <img src="../img/bxl-facebook.svg" alt="Logo de Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../img/bxl-instagram.svg" alt="Logo de Instagram">
+            </a>
+        </div>
+        <div class="final">
+            <p>&copy; Copyright</br>2023</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

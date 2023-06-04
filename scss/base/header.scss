@@ -1,0 +1,47 @@
+/* Estilo para el header */
+/* Barra de navegación*/
+
+$color_1: #ffffff;
+$color_2: #1100ff;
+$color_3: #ff0000;
+$background-color_1: #000000;
+
+.navbar {
+	padding: 2 rem;
+	background-color: $background-color_1;
+	a {
+		color: $color_1;
+	}
+
+	a.nav-link.active {
+		color: $color_1;
+		&:active {
+			color: $color_3;
+		}
+	}
+
+	a.nav-link {
+		&:active {
+			color: $color_2;
+		}
+	}
+}
+
+.navbar-collapse {
+	align-items: center;
+	justify-content: space-between;
+}
+
+header {
+	a.navbar-brand {
+		&:active {
+			color: $color_2;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-brand {
+		display: none;
+	}
+}

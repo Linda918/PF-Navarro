@@ -1,0 +1,107 @@
+$color_1: #8112ad;
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.content {
+		.intro {
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 30rem;
+			max-width: 100%;
+			position: relative;
+			.texto-interior {
+				font-size: 30px;
+				font-weight: bold;
+				left: 10%;
+				position: absolute;
+				text-align: center;
+				top: 40%;
+				width: 80%;
+			}
+		}
+		.img-cero {
+			background-image: url("../img/planeta0.jpg");
+		}
+		.img-uno {
+			background-image: url("../img/mercurio.jpg");
+		}
+		.img-dos {
+			background-image: url("../img/venus.jpg");
+		}
+		.img-tres {
+			background-image: url("../img/tierra.jpg");
+		}
+		.img-cuatro {
+			background-image: url("../img/marte.jpg");
+		}
+		.img-cinco {
+			background-image: url("../img/jupiter.jpg");
+		}
+		.img-seis {
+			background-image: url("../img/saturno.jpg");
+		}
+		.img-siete {
+			background-image: url("../img/urano.jpg");
+		}
+		.img-ocho {
+			background-image: url("../img/neptuno.jpg");
+		}
+		.img-nueve {
+			background-image: url("../img/bandera.jpg");
+		}
+		.img-diez {
+			background-image: url("../img/astronauta.jpg");
+		}
+		.img-once {
+			background-image: url("../img/katya.jpg");
+		}
+		.texto {
+			padding: 5%;
+			width: 90%;
+			p {
+				font-size: 18px;
+				text-align: justify;
+				line-height: 30px;
+			}
+		}
+	}
+}
+.astronauta {
+	margin: 30px;
+	padding: 0;
+	margin-bottom: 100px;
+	h2 {
+		color: $color_1;
+		text-align: center;
+	}
+	.info {
+		text-align: justify;
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.izq {
+		float: left;
+		margin: 20px;
+	}
+}
+@media (max-width: 480px) {
+	.main {
+		.content {
+			.intro {
+				background-size: contain;
+				.texto-interior {
+					font-size: 28px;
+				}
+			}
+			.texto {
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

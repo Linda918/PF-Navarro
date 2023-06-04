@@ -1,0 +1,11 @@
+$color_1: #ffffff;
+$font-family_1: 'Exo', sans-serif;
+$background-color_1: #000000;
+
+body {
+	font-family: $font-family_1;
+	color: $color_1;
+	background-color: $background-color_1;
+	margin: 0;
+	padding: 0;
+}
